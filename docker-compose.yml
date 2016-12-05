@@ -1,0 +1,74 @@
+version: '2'
+
+services:
+  apache2.4.7:
+    build:
+      context: apache-ubuntu14
+    ports:  
+      - 80:80
+    volumes:
+      - $PWD/vhosts:/etc/apache2/sites-enabled
+    links:
+      - plf
+  apache2.4.9:
+    build: 
+      context: apache-base
+      args:
+        APACHE_VERSION: 2.4.9
+    ports:
+      - 82:80
+    links:
+      - plf
+    volumes:
+      - $PWD/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - $PWD/vhosts/vhost.conf:/usr/local/apache2/conf/extra/vhost.conf
+  apache2.4.10:
+    build:
+      context: apache-base
+      args:
+        APACHE_VERSION: 2.4.10
+    ports:
+      - 83:80
+    links:
+      - plf
+    volumes:
+      - $PWD/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - $PWD/vhosts/vhost.conf:/usr/local/apache2/conf/extra/vhost.conf
+  apache2.4.12:
+    build:
+      context: apache-base
+      args:
+        APACHE_VERSION: 2.4.12
+    ports:
+      - 84:80
+    links:
+      - plf
+    volumes:
+      - $PWD/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - $PWD/vhosts/vhost.conf:/usr/local/apache2/conf/extra/vhost.conf
+  apache2.4.16:
+    build:
+      context: apache-base
+      args:
+        APACHE_VERSION: 2.4.16
+    ports:
+      - 85:80
+    links:
+      - plf
+    volumes:
+      - $PWD/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - $PWD/vhosts/vhost.conf:/usr/local/apache2/conf/extra/vhost.conf
+  apache2.4.18:
+    build: apache-ubuntu16
+    ports:
+      - 81:80
+    volumes:
+      - $PWD/vhosts:/etc/apache2/sites-enabled
+    links:
+      - plf
+  plf:
+    build: plf
+    expose:
+      -  8080
+    volumes:
+      - /plf/gatein/data

@@ -1,0 +1,30 @@
+[{"exoId":"root","exoToken":"6iy2bzgd26oo","id":"2","version":"1.0","minimumVersion":"1.0","channel":"/meta/handshake","supportedConnectionTypes":["long-polling","callback-polling"],"advice":{"timeout":60000,"interval":0}}]GET /portal/intranet/home HTTP/1.1
+Host: fqa3.acceptance7.exoplatform.org
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+DNT: 1
+Referer: http://fqa3.acceptance7.exoplatform.org/portal/intranet/wiki
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: fr,en-US;q=0.8,en;q=0.6
+Cookie: rememberme=6ZFWaKuqfBsy.3HWQCO1qm_vH; last_login_username=root; utm_campaign=no-params; utm_medium=no-params; utm_source=no-params; utm_content=no-params; utm_term=no-params; utm_parameters=no-params; _mkto_trk=id:577-PCT-880&token:_mch-exoplatform.org-1467378837890-57969; utm2_campaign=no-params; utm2_medium=no-params; utm2_source=no-params; utm2_content=no-params; utm2_term=no-params; utm2_parameters=no-params; Original_Referrer_2=no-params; Last_Referrer=no-params; utmLast_campaign=no-params; utmLast_medium=no-params; utmLast_source=no-params; utmLast_content=no-params; utmLast_term=no-params; utmLast_parameters=no-params; __utma=64720703.1648802847.1464646525.1478511861.1478511861.1; __utmz=64720703.1478511861.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1648802847.1464646525; BAYEUX_BROWSER=176r25vhyjavzcma; JSESSIONID=fNloJOZDAy13CXSsp3kEQXGT; JSESSIONIDSSO=JqxrfVOpH70J5+LVhqvA02lt
+
+HTTP/1.1 200 OK
+Server: Apache-Coyote/1.1
+Set-Cookie: last_login_username=root; Expires=Fri, 02-Dec-2016 13:41:25 GMT; Path=/portal; HttpOnly
+Cache-Control: no-cache
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 02 Dec 2016 12:41:25 GMT
+
+...
+.....<div class="UIRowContainer ">
+.......
+ ....<div id="70f80bce-e882-48e7-931e-e44cc69eabf4">
+.....<div class="PORTLET-FRAGMENT" style="">
+ ......Cette application a rencontr.. une erreur.
+
+.....</div>
+...
