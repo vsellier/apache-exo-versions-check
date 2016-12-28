@@ -4,7 +4,7 @@ Compare behavior of several versions of apache with a (intentionally) wrong Webs
 # Why
 
 Until version 2.4.13, if a tentative to update an http connection to a websocket tunnel fail, the connection is reused without flushing the content :
-* The websocker error is not forwarded to the client
+* The websocket error is not forwarded to the client
 * The next request failed because the next request is not well formated
 
 The problem seems to be solved in 2.4.13 with this changelog entry :
