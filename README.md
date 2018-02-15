@@ -18,13 +18,13 @@ https://svn.apache.org/repos/asf/httpd/httpd/branches/2.4.x/CHANGES
 
 # How
 
-This compose file allow to start several version of apache to test their behavior.
+This compose file allows to start several versions of apache to test their behaviors.
 
 ```
 # docker-compose up
 ```
 
-It will build several version of apache in front of and exoplaform instance.
+It will build several versions of apache in front of an exoplaform instance.
 
 | Port | Apache Version         |
 |------|------------------------|
@@ -37,8 +37,8 @@ It will build several version of apache in front of and exoplaform instance.
 
 # Checking
 
-If you connect to the deploy eXo Platform instance (default password root / gtn ) and look at the network inspector, before the version apache version 2.4.13, the websocket connection failed with a return code 400 and 
-there the eXo Platform UI can be broken and display a blank page (eXo Platform version 4.4.0 and later) or portlet error messages (eXo Platform prior version 4.4.0). 
+If you connect to the deployed eXo Platform instance (default password root / gtn ) and look at the network inspector, before the version apache version 2.4.13, the websocket connection failed with a return code 400 and 
+then the eXo Platform UI can be broken and displays a blank page (eXo Platform version 4.4.0 and later) or portlet error messages (eXo Platform prior version 4.4.0). 
 
 ![before 2.4.13](img/before_2.4.13.png "Responses code before 2.4.13")
 
@@ -51,6 +51,6 @@ After apache version 2.4.13, the wrong websocket connections are correctly handl
 To remove volumes and containers :
 
 ```
-# docker-compose down
+# docker-compose down -v
 ```
 
